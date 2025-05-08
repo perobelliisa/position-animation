@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <div class="esquerda">
+        <div class="div1"></div>
+        <div class="div2"></div>
+    </div>
+
+    <div class="dir">
+        <div class="rei"></div>
+    </div>
+
+    <div class="eita">
+        <div class="ta"></div>
+    </div>
+
+<style>
+    .esquerda {
+    position: relative;
+    margin: 8vh 5vh;
+    height: 84vh;
+    width: 40vh;
+    background-color: rgb(255, 0, 208);
+}
+.div1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 5vh;
+    background-color: rgb(246, 255, 0);
+    height: 8vh;
+    width: 15vw;
+    animation: tuts 1s infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+.div2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin: 5vh;
+    background-color: rgb(255, 244, 244);
+    height: 8vh;
+    width: 15vw;
+    animation: tuts 1s infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+.dir {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    background-color: rgb(0, 204, 255);
+    height: 20vh;
+    width: 35vw;
+}
+.rei {
+    position: relative;
+    top: 10vh;
+    left: 18vw;
+    margin: 0px;
+    background-color: rgb(254, 212, 0);
+    height: 10vh;
+    width: 17vw;
+    animation: tuts 1s infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+
+.eita {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    background-color: rgb(255, 0, 0);
+    height: 50vh;
+    width: 30vw;
+}
+.ta {
+    position: relative;
+    top: 1vh;
+    left: 0vw;
+    margin: 0px;
+    background-color: rgb(84, 255, 87);
+    height: 10vh;
+    width: 17vw;
+    animation: tuts 1s infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+
+@keyframes tuts {
+    0% {
+        background-color: rgb(246, 255, 0);
+    }
+    25% {
+        background-color: rgb(255, 244, 244);
+    }
+    50% {
+        background-color: rgb(254, 212, 0);
+    }
+    100% {
+        background-color: rgb(55, 255, 0);
+    }
+}
+
+
+</style>
+</body>
+</html>

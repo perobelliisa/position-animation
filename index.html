@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+
+    <style>
+        div {
+        padding: 0px;
+        margin: 0px;
+        width: 101vh; 
+        height: 50vh;
+        position: absolute; 
+          
+    }
+    .div1 {
+        background-color: rgb(255, 0, 212);
+        top: 0px;
+        left: 0px;
+        animation: mudacor 1s infinite;
+        animation-direction: alternate;
+        animation-delay: 0s;
+    }
+    .div2 {
+        background-color: rgb(55, 255, 0);
+        right: 0px;
+        bottom: 0px;
+        animation: mudacor 1s infinite;
+        animation-direction: alternate;
+        animation-delay: 0s;
+    }
+    
+    @keyframes mudacor {
+    0% {
+        background-color: rgb(255, 0, 212);
+    }
+    25% {
+        background-color: rgb(55, 255, 0);
+    }
+    50% {
+        background-color: rgb(255, 0, 212);
+    }
+    100% {
+        background-color: rgb(55, 255, 0);
+    }
+}
+
+
+    </style>
+</body>
+</html>

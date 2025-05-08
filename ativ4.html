@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Formas Básicas</title>
+</head>
+<body>
+    <div class="borda">
+      <div class="quadrado-externo">
+        <div class="circulo1"></div>
+        <div class="circulo2"></div>
+        <div class="circulo3"></div>
+        <div class="circulo4"></div>
+        <div class="quadrado-meio">
+          <div class="circulo5"></div>
+        </div>
+      </div>
+    </div>
+
+    <style> 
+         .borda {
+            width: 95vw;     
+            height: 90vh;    
+            position: relative;
+            background-color: #fff;
+        }
+        
+
+        .quadrado-externo {
+            width: 40vw;     
+            height: 60vh;    
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #e10f0f;
+        }
+        
+
+        .quadrado-meio {
+            width: 32vw;     
+            height: 45vh;   
+            position: absolute;
+            top: 7vh;      
+            left: 4vw;       
+            background-color: #4cffb6;
+        }
+        
+        .circulo1,
+        .circulo2,
+        .circulo3,
+        .circulo4,
+        .circulo5 {
+            position: absolute;
+            width: 10vh;       
+            height: 10vh;
+            border-radius: 50%;
+            animation-name: rodaroda;
+            ani
+        }
+
+        .circulo1 {
+            background-color: #ffff99;
+            top: -3vh;        
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+
+        .circulo2 {
+            background-color: #a4e9ff;
+            top: 50%;
+            right: -3vh;
+            transform: translateY(-50%);
+        }
+        
+
+        .circulo3 {
+            background-color: #2b0b0b;
+            bottom: -3vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        
+        .circulo4 {
+            background-color: #ffa4ff;
+            top: 50%;
+            left: -3vh;
+            transform: translateY(-50%);
+        }
+
+        .circulo5 {
+            background-color: #0d0dff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+  
+    </style>
+
+
+  </body>
+  </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <div class="esquerda">
+        <div class="div1"></div>
+    </div>
+    <div class="redonda"></div>
+
+<style>
+    body {
+    height: 500vh;
+}
+.esquerda {
+    background-color:rgb(90, 51, 0);
+    position: relative;
+    padding: 3vw; 
+    margin: 0px
+}
+.div1 {
+    background-color: antiquewhite ;
+    position: absolute;
+    top:25%;
+    left: 42.5vw;
+    padding: 20px 100px;
+}
+.redonda {
+    width: 120px;
+    height: 120px; 
+    background-color: chocolate;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    animation: pisca 1s infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+
+@keyframes pisca{
+    0% {
+        background-color: chocolate;
+    }
+    25% {
+        background-color: rgb(40, 17, 0);
+    }
+    50% {
+        background-color: chocolate;
+    }
+    100% {
+        background-color: rgb(40, 17, 0);
+    }
+    }
+</style>
+</body>
+</html>
