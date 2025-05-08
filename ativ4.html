@@ -1,104 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+ 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Formas Básicas</title>
-</head>
-<body>
-    <div class="borda">
-      <div class="quadrado-externo">
-        <div class="circulo1"></div>
-        <div class="circulo2"></div>
-        <div class="circulo3"></div>
-        <div class="circulo4"></div>
-        <div class="quadrado-meio">
-          <div class="circulo5"></div>
-        </div>
-      </div>
-    </div>
-
-    <style> 
-         .borda {
-            width: 95vw;     
-            height: 90vh;    
+    <meta charset="UTF-8">
+    <title>Atividade 4</title>
+    <style>
+        body {
+            margin: 0;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+ 
+        .externa {
+            border: 10px solid black;
+            width: 400px;
+            height: 300px;
             position: relative;
-            background-color: #fff;
         }
-        
-
-        .quadrado-externo {
-            width: 40vw;     
-            height: 60vh;    
+ 
+        .meio {
+            background: brown;
+            width: 200px;
+            height: 150px;
             position: absolute;
-            top: 50%; left: 50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #e10f0f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+ 
         }
-        
-
-        .quadrado-meio {
-            width: 32vw;     
-            height: 45vh;   
+ 
+ 
+        .bola {
             position: absolute;
-            top: 7vh;      
-            left: 4vw;       
-            background-color: #4cffb6;
+            width: 160px;
+            height: 160px;
+            top: 70px;
+            left: 120px;
+            animation: girar 5s linear infinite;
         }
-        
-        .circulo1,
-        .circulo2,
-        .circulo3,
-        .circulo4,
-        .circulo5 {
-            position: absolute;
-            width: 10vh;       
-            height: 10vh;
+ 
+ 
+        .interno {
+            background: green;
+            width: 160px;
+            height: 110px;
+        }
+ 
+ 
+        .bolinha {
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
-            animation-name: rodaroda;
-            ani
+            position: absolute;
         }
-
-        .circulo1 {
-            background-color: #ffff99;
-            top: -3vh;        
-            left: 50%;
-            transform: translateX(-50%);
+ 
+        .branca {
+            background: white;
+            top: calc(50% - 15px);
+            left: calc(50% - 15px);
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            position: absolute;
         }
-        
-
-        .circulo2 {
-            background-color: #a4e9ff;
-            top: 50%;
-            right: -3vh;
-            transform: translateY(-50%);
+ 
+ 
+        .vermelha {
+            background: red;
+            top: calc(50% - 15px);
+            left: -24px;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            position: absolute;
         }
-        
-
-        .circulo3 {
-            background-color: #2b0b0b;
-            bottom: -3vh;
-            left: 50%;
-            transform: translateX(-50%);
+ 
+ 
+        .azul {
+            background: blue;
+            top: calc(50% - 15px);
+            left: 155px;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            position: absolute;
         }
-        
-        
-        .circulo4 {
-            background-color: #ffa4ff;
-            top: 50%;
-            left: -3vh;
-            transform: translateY(-50%);
+ 
+        .roxa {
+            background: purple;
+            top: 130px;
+            left: calc(50% - 15px);
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            position: absolute;
         }
-
-        .circulo5 {
-            background-color: #0d0dff;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+ 
+        .laranja {
+            background: orange;
+            top: 0px;
+            left: calc(50% - 15px);
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            position: absolute;
         }
-  
+ 
+        @keyframes girar {
+            0% {
+                transform: rotate(0deg);
+            }
+ 
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+ 
+        .bola .bolinha {
+            transform-origin: 50% 50%;
+        }
     </style>
-
-
-  </body>
-  </html>
+</head>
+ 
+<body>
+ 
+    <div class="externa">
+        <div class="meio">
+            <div class="interno"></div>
+        </div>
+ 
+        <div class="bola">
+            <div class="branca" id="bolinhaBranca"></div>
+            <div class="vermelha" id="bolinhaVermelha"></div>
+            <div class="azul" id="bolinhaAzul"></div>
+            <div class="roxa" id="bolinhaRoxa"></div>
+            <div class="laranja" id="bolinhaLaranja"></div>
+        </div>
+ 
+</body>
+ 
+</html>
